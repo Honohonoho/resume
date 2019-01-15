@@ -20,6 +20,12 @@
 
     </script>
     <style>
+        .container {
+            width: 1280px;
+        }
+        .main {
+            width: 950px;
+        }
         .sidebar .title .avatar{
             width: 120px;
             height: 130px;
@@ -33,6 +39,9 @@
         .weixin {
             text-align: center;
             margin-top: 10px;
+        }
+        .strong {
+            color: #f25d8e;
         }
     </style>
 </head>
@@ -70,7 +79,7 @@
                     <dd><strong>毕业院校:</strong> <span>陕西理工大学 / 电子信息工程</span></dd>
                     <dd><strong>工作经验:</strong> <span>一年半</span></dd>
                     <dd><strong>GitHub:</strong> <a href="https://github.com/Honohonoho" target="_blank">www.github.com/Honohonoho</a><iframe src="https://ghbtns.com/github-btn.html?user=Honohonoho&type=follow" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></dd>
-                    <dd><strong>Gitee:</strong> <a href="https://gitee.com/honohonoho" target="_blank">www.gitee.com/honohonoho</a></dd>
+                    <!-- <dd><strong>Gitee:</strong> <a href="https://gitee.com/honohonoho" target="_blank">www.gitee.com/honohonoho</a></dd> -->
                 </li>
                 <li>
                     <dt><i class="icon-bookmark"></i>Experience. 项目与工作经验</dt>
@@ -78,7 +87,7 @@
                     <ul class="exp">
                         <li>
                             <div class="circle"></div>
-                            <h4>花旗ICG项目</h4>
+                            <h4>花旗 Clarity Dashboard 项目</h4>
                             <p>外派至花旗参与 Citi Clarity 的数据可视化开发工作，负责 Qlik Sense 与 Angular 前端部分的对接工作，使用 Qlik Sense 收集并构建数据模型，给客户提供准确可靠的金融信息服务，项目使用 Angular 和 Qlik 构建，兼容IE。</p>
                         </li>
                     </ul>
@@ -118,8 +127,8 @@
                             <h4>懂得后台管理系统</h4>
                             <p>负责<a href="http://admin.idongde.com:2018" target="_blank">管理后台</a>的相关功能组件开发和维护，该管理后台具有视频上传，审核，驳回、发布等其他功能，可以根据用户身份进行权限管理，使用 Echarts 进行数据分析和呈现，满足公司和相关视频供应商的需求</p>
                             <p>
-                                该项目基于 Vue、Vue-Router、Vuex、Element-UI、Webpack 技术栈开发，
-                                后期负责对前端性能进行优化，采取异步懒加载，负责了 Vue1.x => Vue2.x、Element-UI 的迁移升级，后期使用 Vuex 对组件状态进行统一管理优化，开发和重构了一些基础组件。如：头像上传功能组件，视频实时截图功能组件等。基于 Elemnet-UI 对下拉选择器、输入框进行了二次封装。
+                                该项目基于 <span class="strong">Vue、Vue-Router、Vuex、Element-UI、Webpack</span> 技术栈开发，
+                                之后负责对<span class="strong">前端性能的优化</span>，采取异步懒加载，负责了 Vue1.x => Vue2.x、Element-UI 的迁移升级，后期使用 Vuex 对组件状态进行统一管理优化，开发和重构了一些基础组件。如：头像上传功能组件，视频实时截图功能组件等。基于 Elemnet-UI 对下拉选择器、输入框进行了二次封装。
                             </p>
                             <img src="./img/admin.png" data-action="zoom" width="200px" height="100px">
                         </li>
@@ -140,8 +149,8 @@
                                 <a href="https://honohonoho.github.io/SAKURA/" target="_blank"><i class="icon-link"></i>官网</a>
                                 <!-- <iframe src="https://ghbtns.com/github-btn.html?user=Honohonoho&repo=vue-evernote&type=star" frameborder="0" scrolling="0" width="170px" height="20px"></iframe> -->
                             </h4>
-                            <p>SAKURA(樱花) UI 是一个好用的 UI 组件库，提供了常用的布局、按钮、标签、消息提示、通知等常用 UI 组件，适合移动端和 PC 端使用。</p>
-                            <p>使用的技术栈为 Vue 2.x、使用 Parcel 打包代码，之后升级为 Webpack4.x、ES6 语法。</p>
+                            <p>SAKURA(樱花) UI 是一个好用的 Vue UI 组件库，提供了常用的布局、按钮、标签、消息提示、通知等常用 UI 组件，持续开发中，适合移动端和 PC 端使用。</p>
+                            <p>使用 Parcel 打包代码，之后升级为 Webpack4.x，使用 <span class="strong">Mocha、Karma</span> 搭建单元测试流程，使用 <span class="strong">Travis CI</span> 持续集成。</p>
                             <img src="./img/sakura.jpg" data-action="zoom" width="200px" height="100px">
                         </li>
                         <li>
@@ -152,8 +161,8 @@
                                 <a href="https://honohonoho.github.io/vue-evernote/dist/index.html" target="_blank"><i class="icon-link"></i>预览</a>
                                 <!-- <iframe src="https://ghbtns.com/github-btn.html?user=Honohonoho&repo=vue-evernote&type=star" frameborder="0" scrolling="0" width="170px" height="20px"></iframe> -->
                             </h4>
-                            <p>一款风格简单的在线笔记本，支持用户登录注册，登录后可以创建自己的笔记本进行记录，支持 Markdown 语法，支持预览和增删改查恢复等功能</p>
-                            <p>使用的技术栈为 Vue全家桶、Webpack4.x、Element-UI、Axios、ES6 语法。</p>
+                            <p>一款风格简单的在线笔记本，支持用户登录注册，登录后可以创建自己的笔记本进行记录，支持 Markdown 写作，支持预览和增删改查恢复等功能</p>
+                            <p>使用的技术栈为 Vue全家桶、Webpack4.x、Element-UI、Axios、ES6 语法，目前正在使用 <span class="strong">TypeScript</span> 重构中。</p>
                             <img src="./img/evernote.png" data-action="zoom" width="200px" height="100px">
                         </li>
                     </ul>
@@ -172,27 +181,27 @@
                             <div class="circle"></div>
                             <h4>JavaScript</h4>
                             <p>熟悉原生 Javascript，能脱离 jQuery、zepto 等类库编码，了解常用的 ES6 语法</p>
+                            <p>了解 <span class="strong">TypeScript</span> 的基本知识</p>
                             <p>能运用模块化、面向对象的方式编程</p>
                             <p>了解 Vue、React的使用，曾使用 React 写过一个简易的<a href="https://honohonoho.github.io/react-project-1/build/index.html" target="_blank"> ToDoList</a>（后端使用<a href="https://leancloud.cn/" target="_blank"> LeanCloud</a>）</p>
                         </li>
                         <li>
                             <div class="circle"></div>
                             <h4>其他</h4>
-                            <p>熟悉 Webpack 等前端自动化工具</p>
+                            <p>熟悉 Webpack、Parcel 等前端自动化工具</p>
+                            <p>可以使用<span class="strong">单元测试</span>来保障代码的健壮性</p>
                             <p>了解命令行的使用，能够使用 Git 进行版本控制，使用 Markdown 进行文档书写</p>
-                            <p>了解 Node.js 的一些相关知识</p>
-                            <p>了解前端安全、性能优化方面的一些知识</p>
+                            <p>了解 Node.js 的相关知识</p>
+                            <p>了解前端安全、性能优化方面的知识</p>
                         </li>
                     </ul>
 
                     <h3>其他属性</h3>
                     <ul class="exp">
                         <li>
-                            <p>掘金、知乎用户，同时使用<a href="https://www.jianshu.com/u/81b2c77216d9" target="_blank">简书</a>在手机上写文章，记录学习经过</p>
-                            <p>百度 <a href="https://github.com/mipengine/mip-extensions" target="_blank">MIP 组件</a>的Contributor</p>
-                            <p>百度 <a href="http://ife.baidu.com/" target="_blank">IFE</a> 2017期学员</p>
+                            <p>掘金重度用户、知乎专栏、简书作者，用来记录学习经过</p>
+                            <p>百度 <a href="https://github.com/mipengine/mip-extensions" target="_blank">MIP 组件</a>Contributor</p>
                             <p>轻微强迫症，使用<a href="http://fecs.baidu.com/" target="_blank"> FECS</a> 对代码进行规范</p>
-                            <!-- <p>Bilibili 重度用户，动漫爱好者</p> -->
                         </li>
                     </ul>
                 </li>

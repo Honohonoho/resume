@@ -1,14 +1,14 @@
 {
   "name": "aresume",
   "version": "1.0.0",
-  "description": "Wow, such a beautiful resume",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DIYgod/Resume.git"
+    "url": ""
   },
   "keywords": [
     "resume"
@@ -16,9 +16,9 @@
   "author": "DIYgod",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DIYgod/Resume/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/DIYgod/Resume#readme",
+  "homepage": "",
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
