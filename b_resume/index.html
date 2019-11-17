@@ -9,16 +9,6 @@
     <link rel="stylesheet" href="dist/css/style.min.css">
     <link rel="stylesheet" href="dist/css/fontello.min.css">
     <link rel="stylesheet" href="lib/zoom.css">
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-48084758-4', 'auto');
-        ga('send', 'pageview');
-
-    </script>
     <style>
         .container {
             width: 1280px;
@@ -43,6 +33,8 @@
         }
         .strong {
             color: #f25d8e;
+            /* color: #222;
+            font-weight: bolder; */
         }
         .download-button {
             margin-top: 10px;
@@ -54,6 +46,30 @@
             color: #000;
             border: 1px solid #333;
         }
+        /* .sidebar .title {
+            color: #222;
+        }
+        .side-info{
+            color: #222;
+        }
+        .side-info dt {
+            color: #222;
+        }
+        .note {
+            color: #222;
+        }
+        * {
+            color: #222;
+        }
+        dt {
+            color: #222 !important;
+        }
+        .main a {
+            color: #222;
+        }
+        h3 {
+            color: #222;
+        } */
     </style>
 </head>
 <body>
@@ -67,13 +83,13 @@
             </div>
             <ul class="side-info">
                 <li class="someRight">
-                    <dt><i class="icon-bookmark"></i>Contact. 联系方式</dt>
+                    <dt><i class="icon-bookmark"></i>联系方式：</dt>
                     <dd><i class="icon-phone-1"></i>电话: 17611579227</dd>
                     <dd><i class="icon-mail-alt"></i>邮箱: 751718620@qq.com</dd>
                     <dd><i class="icon-wechat"></i>微信: lq751718620</dd>
                 </li>
                 <li class="someRight">
-                    <dt><i class="icon-bookmark"></i>Application. 应聘岗位</dt>
+                    <dt><i class="icon-bookmark"></i>应聘岗位：</dt>
                     <dd>前端开发工程师</dd>
                 </li>
             </ul>
@@ -88,32 +104,35 @@
         <div class="main">
             <ul class="main-info">
                 <li class="someRight">
-                    <dt><i class="icon-bookmark"></i>Basic info. 基本信息</dt>
-                    <dd><strong>个人信息:</strong> <span>李祺 / 男</span></dd>
+                    <dt><i class="icon-bookmark"></i>个人信息：</dt>
+                    <dd><strong>个人信息:</strong> <span>李祺 / 26</span></dd>
                     <dd><strong>毕业院校:</strong> <span>陕西理工大学 / 本科 / 电子信息工程</span></dd>
-                    <dd><strong>工作经验:</strong> <span>两年</span></dd>
+                    <dd><strong>工作经验:</strong> <span>三年</span></dd>
                     <dd><strong>GitHub:</strong> <a href="https://github.com/Honohonoho" target="_blank">www.github.com/Honohonoho</a><iframe src="https://ghbtns.com/github-btn.html?user=Honohonoho&type=follow" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></dd>
                 </li>
                 <li>
-                    <dt><i class="icon-bookmark"></i>Experience. 项目与工作经验</dt>
-                    <h3><img src="./img/citi.jpg" data-action="zoom" style="height: 35px;"><span>CLPS 上海华钦信息科技股份有限公司（2018.8 - 至今）</span></h3>
+                    <dt><i class="icon-bookmark"></i>项目与工作经验：</dt>
+                    <h3>CLPS 上海华钦信息科技股份有限公司（2018.8 - 至今）</h3>
                     <ul class="exp">
                             <li>
                                 <div class="circle"></div>
-                                <h4>花旗 Event Manage Interface 项目</h4>
-                                <p>外派至花旗参与 Event Manage Interface 项目，为了解决多管理平台的频繁切换登录问题，EMI 项目可以集中管理接入的各个平台，提供可视化的操作体验，前端使用 <span class="strong">React、Redux、React-Router、Webpack、Rx.js</span>构建。</p>
-                                <p>主要完成了 <span class="strong">Trade Processing</span> 模块和持续维护工作。推动了 EMI 项目 <span class="strong">CSS 的规范化</span>，采用 BEM 规范优化相关样式，抽离可复用的样式，多个模块现已完成优化，提升了创建新模块的效率。</p>
+                                <h4>Event Manage Interface 项目</h4>
+                                <p>Event Manage Interface 解决了用户在多管理平台间的频繁切换、登录、操作等问题，EMI 项目可以集中管理接入的各个平台，提供可视化的操作体验，前端使用 <span class="strong">React、Redux、React-Router、Webpack、Rx.js</span>构建。</p>
+                                <p>负责优化<span class="strong">首页加载过慢</span>等问题，维护并贡献了内部的 Gfs-react-components <span class="strong">公用基础库</span>，提高了相似页面的开发效率。</p>
+                                <p>完成了 Trade Processing，Transfer Agancy 等业务模块的开发维护工作。</p>
+                                <p>逐步完善了遗留的 CSS 不规范问题，统一了了不同开发人员的样式编码习惯，采用 BEM 规范优化相关样式，抽离可复用的样式。</p>
                             </li>
                         <li>
                             <div class="circle"></div>
-                            <h4>花旗 Clarity Dashboard 项目</h4>
-                            <p>Clarity Dashboard 是花旗面向客户的数据可视化平台，客户可以浏览相关资产及交易报表，为了解决海量数据下，<span class="strong">前端渲染性能</span>问题，前端分别使用 Qlik Sense 和 Angular 共同构建。</p>
-                            <p>主要负责基础图表的构建及初步封装，使用 Qlik Sense 从 Impala 进行初步数据加载、筛选并格式化，并构建基础数据模型等工作。</p>
-                            <p>参与并负责了 <span class="strong">Prime Analysis、Tax Reclaims</span> 项目的 Qlik Sense 搭建过程，结合 Qlik Sense 自身语法和业务情况，对相关流程和逻辑进行<span class="strong">优化</span>，使数据获取和数据模型构建耗时有了显著减少。</p>
-                            <p>持续负责了 <span class="strong">Custody Intraday</span> 优化及迭代，配合 BA 持续改进用户体验并参与了需求生成到落地的完整流程。</p>
+                            <h4>Clarity Dashboard 数据可视化项目</h4>
+                            <p>Clarity Dashboard 是面向客户的数据可视化平台，客户可以浏览相关资产及交易报表，为了解决海量数据下，<span class="strong">前端渲染性能</span>问题，前端分别使用 Qlik Sense 和 Angular 共同构建。</p>
+                            <p>主要负责<span class="strong">基础图表的构建及初步封装</span>，使用 Qlik Sense 进行初步数据获取、抽象、过滤及格式化，并构建基础数据模型等工作。</p>
+                            <p>参与并负责了 Prime Analysis、Tax Reclaims 项目的 Qlik Sense 搭建过程，结合 Qlik Sense 自身语法和业务情况，对相关流程和逻辑进行优化，使数据获取和数据模型构建耗时有了显著减少。</p>
+                            <p>持续负责了 Custody Intraday 优化及迭代，配合 BA 持续改进用户体验并参与了需求生成到落地的完整流程。</p>
+                            <p>在负责该项目同时<span class="strong">培养了合格的储备人员</span>，之后转而接手 Event Manage Interface 项目。</p>
                         </li>
                     </ul>
-                    <h3><img src="./img/dongde.png" data-action="zoom" style="height: 35px;"><span>分享曲奇网络科技有限公司（2017.7 - 2018.8）</span></h3>
+                    <h3>分享曲奇网络科技有限公司（2017.3 - 2018.8）</h3>
                     <ul class="exp">
                         <li>
                             <div class="circle"></div>
@@ -123,8 +142,8 @@
                                 项目初期使用 jQuery 和 Webpack 构建，改版时负责推动将前端的 CSS 和 JS 的进行了<span class="strong">组件化改造</span>，
                                 使用 SCSS 编写了基础的样式组件库，使用 ES6 规范重构了基础 JS 模块（ES5），对 Webpack 进行了升级优化，大大提升了构建效率，减小了生产环境下的代码体积。
                             </p>
-                            <p>同时也承担了网站改版时主页的<span class="strong">平面设计、动效设计</span>工作，并得到采用，配合设计团队进行优化并最终上线。</p>
-                            <img src="./img/pc-preview.png" data-action="zoom" width="200px" height="100px">
+                            <p>同时也承担了网站改版时主页的<span class="strong">UI设计、交互设计</span>工作，并得到采用，配合设计团队进行优化并最终上线。</p>
+                            <!-- <img src="./img/pc-preview.png" data-action="zoom" width="200px" height="100px"> -->
                         </li>
                         <li>
                             <div class="circle"></div>
@@ -132,13 +151,13 @@
                             <p>负责懂得网移动端的前端开发工作，参与了从需求讨论，原型及交互设计再到技术开发的整个项目流程。</p>
                             <!-- <h5>1.MIP呈现方案</h5> -->
                             <p>
-                                由于移动端访问流量比PC端高，所以使用 <a href="https://www.mipengine.org/" target="_blank">MIP</a> 组件对移动端整体进行改造，
-                                使其对搜索引擎有<span class="strong">友好的 SEO </span> 和更高的排序权重，重点落地页实现搜索结果页首位展示，网站 DAU 有了显著提高，
-                                页面交互和数据请求使用独立开发的MIP组件，配合 CDN 和 百度搜索优化策略来加快页面访问速度。
+                                由于移动端访问流量比PC端高，在H5的基础框架下，负责了用 <span class="strong">MIP 加速</span>方案对移动端整体进行改造，
+                                使其对搜索引擎有<span class="strong">友好的 SEO </span> 和更高的排序权重，重点落地页实现搜索结果页首位展示，网站 <span class="strong">DAU 和留存率</span>有了显著提高，
+                                页面交互和数据请求使用独立开发的MIP组件，配合 CDN 和 百度搜索优化策略来<span class="strong">加快页面访问速度</span>。
                             </p>
                             <p>
-                                项目使用 Webpack 和 MIP 组件构建，支持所有移动端主流浏览器，并使用 SCSS 编写了基础的样式组件库。
-                                结合 MIP 规范，使用原生 JS 贡献了一些通用业务组件，并获得官方采纳。如：业务定制的视频播放组件、业务定制的音频播放组件、侧边菜单栏组件等。
+                                项目使用 Webpack 和 MIP js 组件构建，支持所有移动端主流浏览器，并使用 SCSS 编写了基础的样式组件库。
+                                结合 MIP 规范，向 MIP 团队贡献了一些通用业务组件，并获得官方采纳。如：业务定制的视频播放组件、业务定制的音频播放组件、侧边菜单栏组件等。
                             </p>
                             <!-- <h5>2.H5呈现方案</h5>
                             <p>针对其他页面，使用 HTML5 标准开发，负责并参与了页面的部分原型设计、基础的样式组件编写，使用 REM 方案适配主流手机屏幕，项目使用 Webpack 构建，支持移动端主流浏览器</p> -->
@@ -147,14 +166,14 @@
                             <div class="circle"></div>
                             <h4>懂得后台管理系统</h4>
                             <p>
-                                负责管理后台的相关功能组件开发和维护，该管理后台具有视频上传，审核，驳回、发布等其他功能，满足网站编辑和供应商的使用需求。
+                                负责管理后台的相关业务功能的开发和维护，该管理后台具有视频上传，审核，驳回、发布等其他功能，满足网站编辑和供应商的使用需求。
                                 可以根据用户身份进行权限管理，使用 Echarts 进行数据分析和呈现。</p>
                             <p>
                                 该项目基于 <span class="strong">Vue、Vue-Router、Vuex、Element-UI、Webpack</span> 技术栈开发，
-                                负责对<span class="strong">前端性能的进行优化</span>，采取异步懒加载，负责了 Vue1.x => Vue2.x、Element-UI 的迁移升级，
+                                负责对<span class="strong">前端性能的进行优化</span>，减少非必要http请求，减小生产环境下js文件的体积，引入异步懒加载，负责了 Vue1.x 到 Vue2.x、Webpack、Element-UI 的迁移升级，
                                 优化 Vuex 中相关业务数据流逻辑，开发和重构相关基础组件。
                             </p>
-                            <img src="./img/admin.png" data-action="zoom" width="200px" height="100px">
+                            <!-- <img src="./img/admin.png" data-action="zoom" width="200px" height="100px"> -->
                         </li>
                         <li>
                             <div class="circle"></div>
@@ -173,16 +192,18 @@
                                 <a href="https://honohonoho.github.io/SAKURA/" target="_blank"><i class="icon-link"></i>官网</a>
                                 <!-- <iframe src="https://ghbtns.com/github-btn.html?user=Honohonoho&repo=vue-evernote&type=star" frameborder="0" scrolling="0" width="170px" height="20px"></iframe> -->
                             </h4>
+                            <h5>Vue 版</h5>
                             <p>
-                                SAKURA UI 是基于 Vue 2.0 的 <span class="strong">UI 组件库</span>，提供了常用的网格、布局、图标、按钮、标签页、输入框、消息提示、通知、折叠面板、级联选择器、轮播等常用 UI 组件，
+                                SAKURA UI 是基于 Vue 2.0 的 <span class="strong">UI 组件库</span>，提供了常用的网格、布局、图标、按钮、标签页、输入框、消息提示、通知、折叠面板、表格、导航、文件上传、级联选择器、轮播等常用 UI 组件，
                                 持续开发中，适合移动端和 PC 端使用，现已发布至 <span class="strong"><a href="https://www.npmjs.com/package/sakura_ui">NPM</a></span>
                             </p>
                             <p>
-                                初期 Parcel 打包代码，之后升级为 vue cli 3，使用 <span class="strong">Karma + Mocha + Chai</span> 搭建做自动化测试流程，
-                                使用 <span class="strong">Travis CI</span> 持续集成，编写了shell脚本来完成<span class="strong">一键部署</span>。
+                                项目初期使用 Parcel 构建打包，之后升级为 Vue cli 3，使用 <span class="strong">Karma + Mocha + Chai</span> 搭建做自动化测试，
+                                使用 <span class="strong">Travis CI</span> 持续集成，编写了 Shell 脚本来完成<span class="strong">部署配置</span>。
                             </p>
+                            <h5>React 版</h5>
                             <p>同时 <span class="strong">React + Typescript 版本</span>也在边学习边开发中，同时积累了相关从零开始搭建并配置项目的经验，<span class="strong"><a href="https://github.com/Honohonoho/Hanabi">项目地址点我</a></span></p>
-                            <img src="./img/sakura.jpg" data-action="zoom" width="200px" height="100px">
+                            <!-- <img src="./img/sakura.jpg" data-action="zoom" width="200px" height="100px"> -->
                         </li>
                         <li>
                             <div class="circle"></div>
@@ -191,24 +212,12 @@
                                 <a href="https://github.com/Honohonoho/douban" target="_blank"><i class="icon-link"></i>地址</a>
                             </h4>
                             <p>使用 <span class="strong">React-Native</span> 和豆瓣开放API开发的一款电影APP，还原了大部分豆瓣电影的功能，包括正在上映电影，热门电影，搜索电影，用户中心等页面。 </p>
-                            <img src="./img/douban.jpg" data-action="zoom" width="100px" height="">
-                        </li>
-                        <li>
-                            <div class="circle"></div>
-                            <h4>
-                                <span>Evernote 在线笔记本</span>
-                                <!-- <a href="https://github.com/Honohonoho/vue-evernote" target="_blank"><i class="icon-link"></i>源代码</a> -->
-                                <a href="https://honohonoho.github.io/vue-evernote/dist/index.html" target="_blank"><i class="icon-link"></i>预览</a>
-                                <!-- <iframe src="https://ghbtns.com/github-btn.html?user=Honohonoho&repo=vue-evernote&type=star" frameborder="0" scrolling="0" width="170px" height="20px"></iframe> -->
-                            </h4>
-                            <p>一款风格简单的在线笔记本，用户登录注册，登录后可以创建自己的笔记本进行记录，支持 Markdown 写作，支持预览和增删改查恢复等功能</p>
-                            <p>使用的技术栈为 <span class="strong">Vue全家桶、Webpack3.x、Element-UI、Axios、ES6</span> 语法。</p>
-                            <img src="./img/evernote.png" data-action="zoom" width="200px" height="100px">
+                            <!-- <img src="./img/douban.jpg" data-action="zoom" width="100px" height=""> -->
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <dt><i class="icon-bookmark"></i>Skill. 技能清单</dt>
+                    <dt><i class="icon-bookmark"></i>技能清单：</dt>
                     <h3>前端</h3>
                     <ul class="exp">
                         <li>
@@ -220,11 +229,11 @@
                         <li>
                             <div class="circle"></div>
                             <h4>JavaScript</h4>
-                            <p>熟悉原生 Javascript，能脱离 jQuery、zepto 等类库编码，了解常用的 ES6 语法</p>
+                            <p>熟悉原生 Javascript，能脱离 jQuery、Zepto 等类库编码，了解常用的 ES6 语法</p>
                             <p>熟悉 <span class="strong">Vue、React</span> 的使用，可以配合相关 UI 库快速搭建项目。</p>
                             <p>了解 <span class="strong">React Native</span> 相关知识</p>
                             <p>了解 <span class="strong">TypeScript</span> 的基本使用</p>
-                            <p>了解 <span class="strong">Node.js</span> 的相关知识，正在学习 <span class="strong">SSR</span> 相关知识</p>
+                            <p>了解 <span class="strong">Node.js</span> 的相关知识，了解 <span class="strong">SSR</span> 相关知识</p>
                             <p>能运用模块化、面向对象的方式编程</p>
                         </li>
                         <li>
@@ -241,7 +250,7 @@
                     <ul class="exp">
                         <li>
                             <p>知乎重度用户、知乎专栏、简书作者，没事儿写点技术文章</p>
-                            <p>百度 <a href="https://github.com/mipengine/mip-extensions" target="_blank">MIP 组件</a> 、Cilicili 网站 Contributor</p>
+                            <p>百度 MIP 组件 、Cilicili 网站 Contributor</p>
                             <p>有参与开源项目的经验</p>
                         </li>
                     </ul>
